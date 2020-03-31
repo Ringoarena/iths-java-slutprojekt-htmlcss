@@ -11,60 +11,72 @@ p {
   font-family: 'Open Sans', sans-serif; }
 
 header {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas: "menu . logo . cart" "search search search search search";
-  justify-content: center;
-  align-items: center;
-  background-color: #3c3c3b;
-  padding: 1rem; }
-  header button {
-    grid-area: menu;
-    margin: 0 auto 0 0; }
-  header img {
-    width: 4rem;
+  background-color: #3c3c3b; }
+  header div {
     margin: 0 auto;
-    grid-area: logo; }
-  header ul {
-    grid-area: cart;
-    margin: 0 0 0 auto;
-    padding: 0; }
-    header ul li {
-      display: inline; }
-      header ul li a {
-        text-decoration: none;
-        display: none; }
-      header ul li a:visited {
-        color: white;
-        text-decoration: none; }
-      header ul li a:hover {
-        text-decoration: underline; }
-  header form {
-    grid-area: search;
-    background-color: white;
-    border-radius: 0.4rem;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.8rem;
-    border: 2px white solid; }
-    header form input {
-      flex-grow: 1;
-      border: none; }
-    header form button {
-      border: none;
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "menu . logo . cart" "search search search search search";
+    justify-content: center;
+    align-items: center;
+    padding: 1rem; }
+    header div button {
+      grid-area: menu;
+      margin: 0 auto 0 0; }
+    header div img {
+      width: 4rem;
+      margin: 0 auto;
+      grid-area: logo; }
+    header div ul {
+      grid-area: cart;
+      margin: 0 0 0 auto;
+      padding: 0; }
+      header div ul li {
+        display: inline; }
+        header div ul li a {
+          text-decoration: none;
+          display: none; }
+        header div ul li a:visited {
+          color: white;
+          text-decoration: none; }
+        header div ul li a:hover {
+          text-decoration: underline; }
+    header div form {
+      grid-area: search;
       background-color: white;
-      color: black; }
-  header form:hover {
-    border: 2px #ff703c solid; }
-  header button {
-    background-color: #3c3c3b;
-    color: white;
-    border-style: solid;
-    border-radius: 10%;
-    height: 2rem;
-    padding: 0 1rem; }
+      border-radius: 0.4rem;
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5rem;
+      border: 2px white solid; }
+      header div form input {
+        flex-grow: 1;
+        border: none; }
+      header div form button {
+        border: none;
+        background-color: white;
+        color: black; }
+    header div form:hover {
+      border: 2px #ff703c solid; }
+    header div button {
+      background-color: #3c3c3b;
+      color: white;
+      border-style: solid;
+      border-radius: 10%;
+      height: 2rem;
+      padding: 0 1rem; }
+
+@media screen and (min-width: 641px) {
+  header div {
+    grid-template-areas: "logo search search search . cart cart"; }
+    header div > button {
+      display: none; }
+    header div ul li a {
+      display: inline;
+      margin-right: 1rem; } }
 
 nav {
   display: none;
