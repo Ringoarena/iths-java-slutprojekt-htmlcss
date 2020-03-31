@@ -1,5 +1,57 @@
+body {
+  margin: 0; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Proza Libre', sans-serif; }
 
+main, footer {
+  background-color: dodgerblue; }
+
 p {
   font-family: 'Open Sans', sans-serif; }
+
+.welcome {
+  display: flex; }
+
+header {
+  background-color: #3c3c3b;
+  padding: 1rem; }
+  header img {
+    width: 4rem; }
+  header div {
+    display: flex;
+    justify-content: space-between; }
+    header div ul {
+      padding: 0; }
+      header div ul li {
+        display: inline; }
+        header div ul li a {
+          text-decoration: none;
+          display: none; }
+        header div ul li a:visited {
+          color: white;
+          text-decoration: none; }
+        header div ul li a:hover {
+          text-decoration: underline; }
+  header form {
+    background-color: white;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    border: 2px white solid; }
+    header form input {
+      flex-grow: 1;
+      border: none; }
+    header form button {
+      border: none;
+      background-color: white; }
+  header form:hover {
+    border: 2px #ff703c solid; }
+
+nav {
+  display: none;
+  background-color: #e7e7e7; }
+  nav ul li {
+    display: inline; }
