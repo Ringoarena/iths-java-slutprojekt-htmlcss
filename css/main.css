@@ -76,7 +76,12 @@ header {
       display: none; }
     header div ul li a {
       display: inline;
-      margin-right: 1rem; } }
+      margin-right: 1rem; }
+    header div ul li a:visited {
+      color: white;
+      text-decoration: none; }
+    header div ul li a:hover {
+      text-decoration: underline; } }
 
 nav {
   display: none;
