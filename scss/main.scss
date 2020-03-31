@@ -16,43 +16,52 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-.welcome {
-    display: flex;
-}
-
 header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    "menu . logo . cart"
+    "search search search search search";
+    justify-content: center;
+    align-items: center;
     background-color: #3c3c3b;
     padding: 1rem;
+
+    button {
+        grid-area: menu;
+        margin: 0 auto 0 0;
+    }
     
     img {
         width: 4rem;
+        margin: 0 auto;
+        grid-area: logo;
     }
 
-    div {
-        display: flex;
-        justify-content: space-between;
+    ul {
+        grid-area: cart;
+        margin: 0 0 0 auto;
+        padding: 0;
 
-        ul {
-            padding: 0;
-
-            li {
-                display: inline;
-                a {
-                    text-decoration: none;
-                    display: none;
-                }
-                a:visited {
-                    color: white;
-                    text-decoration: none;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
+        li {
+            display: inline;
+            a {
+                text-decoration: none;
+                display: none;
+            }
+            a:visited {
+                color: white;
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
             }
         }
     }
 
     form {
+        grid-area: search;
         background-color: white;
         border-radius: 0.4rem;
         margin-top: 1rem;
@@ -69,6 +78,7 @@ header {
         button {
             border: none;
             background-color: white;
+            color: black;
         }
     }
 
@@ -76,6 +86,14 @@ header {
         border: 2px rgb(255, 112, 60) solid;
     }
 
+    button {
+        background-color: #3c3c3b;
+        color: white;
+        border-style: solid;
+        border-radius: 10%;
+        height: 2rem;
+        padding: 0 1rem;
+    }
 }
 
 nav {
