@@ -1,0 +1,23 @@
+{
+  "name": "iths-java-slutprojekt-htmlcss",
+  "version": "1.0.0",
+  "description": "Surfa runt på webben och leta inspiration efter en webbplats du vill bygga. Det behöver inte vara något fancy.\r Tänk på att inte göra det för stort, några enstaka sidor räcker gott och väl.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ringoarena/iths-java-slutprojekt-htmlcss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ringoarena/iths-java-slutprojekt-htmlcss/issues"
+  },
+  "homepage": "https://github.com/Ringoarena/iths-java-slutprojekt-htmlcss#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
