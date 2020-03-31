@@ -37,7 +37,8 @@ header {
         display: inline; }
         header div ul li a {
           text-decoration: none;
-          display: none; }
+          display: none;
+          color: white; }
         header div ul li a:visited {
           color: white;
           text-decoration: none; }
@@ -69,19 +70,17 @@ header {
       height: 2rem;
       padding: 0 1rem; }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 741px) {
   header div {
-    grid-template-areas: "logo search search search . cart cart"; }
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "logo search search cart cart cart"; }
+    header div form {
+      margin: 0; }
     header div > button {
       display: none; }
     header div ul li a {
       display: inline;
-      margin-right: 1rem; }
-    header div ul li a:visited {
-      color: white;
-      text-decoration: none; }
-    header div ul li a:hover {
-      text-decoration: underline; } }
+      margin-right: 1rem; } }
 
 nav {
   display: none;

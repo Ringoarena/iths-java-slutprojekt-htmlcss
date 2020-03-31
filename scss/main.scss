@@ -54,6 +54,7 @@ header {
                 a {
                     text-decoration: none;
                     display: none;
+                    color: white
                 }
                 a:visited {
                     color: white;
@@ -102,12 +103,17 @@ header {
     }
 }
 
-@media screen and (min-width: 641px) {
+@media screen and (min-width: 741px) {
     header {
 
         div {
+            grid-template-columns: repeat(6, 1fr);
             grid-template-areas: 
-            "logo search search search . cart cart";
+            "logo search search cart cart cart";
+
+            form {
+                margin: 0;
+            }
 
             > button {
                 display: none;
@@ -118,13 +124,6 @@ header {
                     a {
                         display: inline;
                         margin-right: 1rem;
-                    }
-                    a:visited {
-                        color: white;
-                        text-decoration: none;
-                    }
-                    a:hover {
-                        text-decoration: underline;
                     }
                 }
             }
