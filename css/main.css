@@ -7,6 +7,11 @@ h1, h2, h3, h4, h5, h6 {
 footer {
   background-color: dodgerblue; }
 
+main .deals article button {
+  background: white;
+  border: 1px black solid;
+  padding: 1rem; }
+
 p {
   font-family: 'Open Sans', sans-serif; }
 
@@ -109,10 +114,6 @@ main {
       main .deals article img {
         border-radius: 10px;
         width: 100%; }
-      main .deals article button {
-        background: white;
-        border: 1px black solid;
-        padding: 1rem; }
 
 @media screen and (min-width: 741px) {
   header div {

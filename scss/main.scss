@@ -8,6 +8,12 @@
     background-color: dodgerblue;
 }
 
+%shop-now {
+    background: white;
+    border: 1px black solid;
+    padding: 1rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
     @extend %headings;
 }
@@ -159,9 +165,7 @@ main {
             }
 
             button {
-                background: white;
-                border: 1px black solid;
-                padding: 1rem;
+                @extend %shop-now;
             }
         }
     }
