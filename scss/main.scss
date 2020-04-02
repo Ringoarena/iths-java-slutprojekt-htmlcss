@@ -139,7 +139,6 @@ nav {
 }
 
 main {
-    // @extend %grid-item;
     margin: 0 auto;
     max-width: 1024px;
     padding: 1rem;
@@ -149,13 +148,13 @@ main {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
-        background-color: red;
 
         article {
-            background-color: green;
+            background-color: rgb(226, 226, 226);
+            padding: 1rem;
             
             img {
-                max-width: 550px;
+                width: 100%;
             }
         }
     }
@@ -194,5 +193,11 @@ footer {
 
     nav {
         display: block;
+    }
+
+    main {
+        .deals {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 }
