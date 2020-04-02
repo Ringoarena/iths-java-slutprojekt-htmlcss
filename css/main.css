@@ -4,9 +4,6 @@ body, h1 {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Proza Libre', sans-serif; }
 
-footer {
-  background-color: dodgerblue; }
-
 main .deals article button {
   background: white;
   border: 1px black solid;
@@ -21,9 +18,9 @@ header {
     margin: 0 auto;
     max-width: 1024px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "menu . logo . cart" "search search search search search";
+    grid-template-areas: "menu logo cart" "search search search";
     justify-content: center;
     align-items: center;
     padding: 1rem; }
@@ -114,6 +111,20 @@ main {
       main .deals article img {
         border-radius: 10px;
         width: 100%; }
+
+footer {
+  background-color: #3c3c3b;
+  padding-bottom: 100px; }
+  footer a {
+    background-color: #e7e7e7;
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem; }
+    footer a ion-icon {
+      margin-right: 1rem; }
 
 @media screen and (min-width: 741px) {
   header div {
