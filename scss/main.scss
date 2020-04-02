@@ -14,6 +14,20 @@
     padding: 1rem;
 }
 
+%footer-list {
+    ul {
+        padding: 0;
+        li {
+            display: block;
+            a {
+                text-align: start;
+                background-color: #3c3c3b;
+                color: white;
+            }
+        }
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     @extend %headings;
 }
@@ -34,7 +48,6 @@ header {
         grid-template-areas: 
         "menu logo cart"
         "search search search";
-        justify-content: center;
         align-items: center;
         
         padding: 1rem;
@@ -173,7 +186,8 @@ main {
 
 footer {
     background-color: #3c3c3b;
-    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 
     a {
         background-color: #e7e7e7;
@@ -190,6 +204,55 @@ footer {
 
     section {
         color: white;
+        margin: 0 3rem;
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+        "news-letter"
+        "customer-services"
+        "social-media";
+
+        .news-letter {
+            grid-area: news-letter;
+            padding: 2rem;
+            max-width: 512px;
+            margin: 0 auto;
+            div {
+                display: flex;
+                width: 100%;
+
+                input {
+                    flex-grow: 1;
+                }
+            }
+        }
+
+        .customer-services {
+            grid-area: customer-services;
+            padding: 2rem;
+            @extend %footer-list;
+        }
+        
+        .social-media {
+            grid-area: social-media;
+            padding: 2rem;
+            @extend %footer-list;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            ul {
+                li {
+                    display: inline-block;
+
+                    a {
+                        ion-icon {
+                            font-size: 32px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -227,6 +290,15 @@ footer {
     main {
         .deals {
             grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    footer {
+        section {
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: 
+            "news-letter customer-services"
+            "social-media social-media"
         }
     }
 }

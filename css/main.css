@@ -9,6 +9,15 @@ main .deals article button {
   border: 1px black solid;
   padding: 1rem; }
 
+footer section .customer-services ul, footer section .social-media ul {
+  padding: 0; }
+  footer section .customer-services ul li, footer section .social-media ul li {
+    display: block; }
+    footer section .customer-services ul li a, footer section .social-media ul li a {
+      text-align: start;
+      background-color: #3c3c3b;
+      color: white; }
+
 p {
   font-family: 'Open Sans', sans-serif; }
 
@@ -21,7 +30,6 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "menu logo cart" "search search search";
-    justify-content: center;
     align-items: center;
     padding: 1rem; }
     header div button {
@@ -114,7 +122,8 @@ main {
 
 footer {
   background-color: #3c3c3b;
-  padding-bottom: 100px; }
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); }
   footer a {
     background-color: #e7e7e7;
     display: block;
@@ -125,7 +134,34 @@ footer {
     footer a ion-icon {
       margin-right: 1rem; }
   footer section {
-    color: white; }
+    color: white;
+    margin: 0 3rem;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "news-letter" "customer-services" "social-media"; }
+    footer section .news-letter {
+      grid-area: news-letter;
+      padding: 2rem;
+      max-width: 512px;
+      margin: 0 auto; }
+      footer section .news-letter div {
+        display: flex;
+        width: 100%; }
+        footer section .news-letter div input {
+          flex-grow: 1; }
+    footer section .customer-services {
+      grid-area: customer-services;
+      padding: 2rem; }
+    footer section .social-media {
+      grid-area: social-media;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      footer section .social-media ul li {
+        display: inline-block; }
+        footer section .social-media ul li a ion-icon {
+          font-size: 32px; }
 
 @media screen and (min-width: 741px) {
   header div {
@@ -141,4 +177,7 @@ footer {
   nav {
     display: block; }
   main .deals {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  footer section {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "news-letter customer-services" "social-media social-media"; } }
