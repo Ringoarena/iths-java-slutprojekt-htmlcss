@@ -139,7 +139,7 @@ nav {
 }
 
 main {
-    @extend %grid-item;
+    // @extend %grid-item;
     margin: 0 auto;
     max-width: 1024px;
     padding: 1rem;
@@ -153,6 +153,10 @@ main {
 
         article {
             background-color: green;
+            
+            img {
+                max-width: 550px;
+            }
         }
     }
 }

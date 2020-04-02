@@ -4,7 +4,7 @@ body, h1 {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Proza Libre', sans-serif; }
 
-main, footer {
+footer {
   background-color: dodgerblue; }
 
 p {
@@ -107,6 +107,8 @@ main {
     background-color: red; }
     main .deals article {
       background-color: green; }
+      main .deals article img {
+        max-width: 550px; }
 
 @media screen and (min-width: 741px) {
   header div {
