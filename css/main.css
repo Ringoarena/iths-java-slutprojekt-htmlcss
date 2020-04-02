@@ -107,6 +107,7 @@ main {
     main .deals article {
       padding: 1rem; }
       main .deals article img {
+        border-radius: 10px;
         width: 100%; }
       main .deals article button {
         background: white;
