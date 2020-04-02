@@ -178,7 +178,6 @@ footer {
     a {
         background-color: #e7e7e7;
         display: block;
-        width: 100%;
         text-align: center;
         text-decoration: none;
         color: black;
@@ -187,6 +186,10 @@ footer {
         ion-icon {
             margin-right: 1rem;
         }
+    }
+
+    section {
+        color: white;
     }
 }
 
