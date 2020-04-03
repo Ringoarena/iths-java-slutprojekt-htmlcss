@@ -191,4 +191,6 @@ footer {
     grid-template-columns: repeat(2, 1fr); }
   footer section {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "news-letter customer-services" "social-media social-media"; } }
+    grid-template-areas: "news-letter customer-services" "social-media social-media"; }
+    footer section .social-media ul li a ion-icon {
+      font-size: 16px; } }

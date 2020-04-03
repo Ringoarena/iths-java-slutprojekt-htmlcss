@@ -312,6 +312,18 @@ footer {
             grid-template-areas: 
             "news-letter customer-services"
             "social-media social-media";
+
+            .social-media {
+                ul {
+                    li {
+                        a {
+                            ion-icon {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
