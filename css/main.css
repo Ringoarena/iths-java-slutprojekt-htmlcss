@@ -173,8 +173,8 @@ footer {
         footer section .social-media ul li a ion-icon {
           font-size: 24px; }
       footer section .social-media .policies {
-        border-bottom: 1px purple solid;
-        font-size: 0.6rem; }
+        border-bottom: 1px orange solid;
+        font-size: 0.7rem; }
 
 @media screen and (min-width: 741px) {
   header div {
