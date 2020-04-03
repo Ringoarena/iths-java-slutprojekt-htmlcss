@@ -169,7 +169,6 @@ main {
         gap: 1rem;
 
         article {
-            // background-color: rgb(226, 226, 226);
             padding: 1rem;
             
             img {
@@ -196,15 +195,12 @@ footer {
         text-decoration: none;
         color: black;
         padding: 0.5rem;
-
-        ion-icon {
-            margin-right: 1rem;
-        }
     }
 
     section {
         color: white;
-        margin: 0 0.2rem;
+        max-width: 1024px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
@@ -256,6 +252,7 @@ footer {
             ul {
                 li {
                     display: inline-block;
+                    margin: 0 auto;
 
                     a {
                         ion-icon {
