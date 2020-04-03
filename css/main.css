@@ -135,7 +135,7 @@ footer {
       margin-right: 1rem; }
   footer section {
     color: white;
-    margin: 0 0.5rem;
+    margin: 0 0.2rem;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "news-letter" "customer-services" "social-media"; }
