@@ -205,6 +205,8 @@ footer {
     display: block; }
   main .deals {
     grid-template-columns: repeat(2, 1fr); }
+    main .deals article {
+      padding: 0; }
   main .bikes {
     grid-template-columns: repeat(3, 1fr); }
   footer section {
