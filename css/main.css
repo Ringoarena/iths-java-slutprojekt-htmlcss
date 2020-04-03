@@ -132,6 +132,16 @@ main {
       main .bikes article img {
         border-radius: 10px;
         width: 100%; }
+  main .news {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem; }
+    main .news article {
+      padding: 1rem;
+      margin-bottom: 5rem; }
+      main .news article img {
+        border-radius: 10px;
+        width: 100%; }
 
 footer {
   background-color: #3c3c3b;
@@ -209,6 +219,8 @@ footer {
       padding: 0; }
   main .bikes {
     grid-template-columns: repeat(3, 1fr); }
+  main .news article {
+    padding: 0; }
   footer section {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "news-letter customer-services" "social-media social-media"; }

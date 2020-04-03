@@ -197,6 +197,21 @@ main {
             }
         }
     }
+
+    .news {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+
+        article {
+            padding: 1rem;
+            margin-bottom: 5rem;
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+    }
 }
 
 footer {
@@ -331,6 +346,12 @@ footer {
 
         .bikes {
             grid-template-columns: repeat(3, 1fr);
+        }
+
+        .news {
+            article {
+                padding: 0;
+            }
         }
     }
 
