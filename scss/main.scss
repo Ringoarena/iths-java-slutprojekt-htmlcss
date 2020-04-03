@@ -4,10 +4,6 @@
     font-family: 'Proza Libre', sans-serif;
 }
 
-%grid-item {
-    background-color: dodgerblue;
-}
-
 %shop-now {
     background: white;
     border: 1px black solid;
@@ -153,6 +149,9 @@ nav {
             a:hover {
                 border-bottom: 0.2rem black solid;
             }
+            a.current {
+                border-bottom: 0.2rem black solid;
+            }
         }
     }
 }
@@ -160,17 +159,14 @@ nav {
 main {
     margin: 0 auto;
     max-width: 1024px;
-    padding: 1rem;
+    padding: 1rem 0;
 
     .deals {
-        margin: 1rem 0;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
 
         article {
-            padding: 1rem;
-            
             img {
                 border-radius: 10px;
                 width: 100%;
@@ -191,7 +187,6 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 1rem;
             border-bottom: 1px gray solid;
 
             img {
@@ -295,6 +290,10 @@ footer {
             grid-template-columns: repeat(6, 1fr);
             grid-template-areas: 
             "logo search search cart cart cart";
+
+            img {
+                margin: 0;
+            }
 
             form {
                 margin: 0;
