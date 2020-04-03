@@ -173,6 +173,9 @@ footer {
         display: inline-block; }
         footer section .social-media ul li a ion-icon {
           font-size: 24px; }
+      footer section .social-media .policies {
+        border: 2px red solid;
+        font-size: 0.9rem; }
 
 @media screen and (min-width: 741px) {
   header div {
