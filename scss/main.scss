@@ -248,7 +248,7 @@ footer {
         
         .social-media {
             grid-area: social-media;
-            padding: 2rem;
+            // padding: 2rem;
             @extend %footer-list;
             display: flex;
             flex-direction: column;
@@ -267,7 +267,7 @@ footer {
             }
 
             .policies {
-                border: 2px red solid;
+                border: 2px pink solid;
                 font-size: 0.9rem;
             }
         }

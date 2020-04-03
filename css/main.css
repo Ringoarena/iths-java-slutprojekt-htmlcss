@@ -165,7 +165,6 @@ footer {
       padding: 2rem; }
     footer section .social-media {
       grid-area: social-media;
-      padding: 2rem;
       display: flex;
       flex-direction: column;
       align-items: center; }
@@ -174,7 +173,7 @@ footer {
         footer section .social-media ul li a ion-icon {
           font-size: 24px; }
       footer section .social-media .policies {
-        border: 2px red solid;
+        border: 2px pink solid;
         font-size: 0.9rem; }
 
 @media screen and (min-width: 741px) {
