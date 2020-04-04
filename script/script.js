@@ -1,12 +1,14 @@
 window.onload = function() {
 
-    document.getElementById("submit").addEventListener("click", function(){
+    document.getElementById("submit").addEventListener("click", function(event){
+        event.preventDefault();
         var searchBox = document.getElementById("search-box");
         alert("You searched for: " + searchBox.value);
         searchBox.value = "";
     });
 
-    document.getElementById("signup-button").addEventListener("click", function(){
+    document.getElementById("signup-button").addEventListener("click", function(event){
+        event.preventDefault();
         var emailField = document.getElementById("email-field");
         alert("You registered: " + emailField.value);
         emailField.value = "";
