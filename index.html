@@ -7,22 +7,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <script src="script/script.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <title>Educational Index</title>
 </head>
 <body>
     <header id="top">
         <div>
-            <button onclick="openNav()">Menu</button>
+            <button id="menu-button">Menu</button>
             <img src="https://www.wigglestatic.com/images/ui/wiggle-logo/desktop-wiggle_master_rgb_logo.svg" alt="wiggle logo">
             <ul>
                 <li><a href="#">Your Account</a></li>
                 <li><a href="#">Wishlist</a></li>
                 <li><button><ion-icon name="cart-outline"></ion-icon>(0)</button></li>
             </ul>
-            <form action="#">
-                <input type="text" placeholder="Search">
-                <button><ion-icon name="search-outline"></ion-icon></button>
+            <form action="#" id="search-form">
+                <input type="text" id="search-box" placeholder="Search">
+                <button id="submit"><ion-icon name="search-outline"></ion-icon></button>
             </form>
         </div>
     </header>
@@ -33,8 +34,8 @@
             <li><a href="news.html">News</a></li>
         </ul>
     </nav>
-    <div id="sidenav">
-        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="cellphone-menu">
+        <a href="#" id="close-menu">&times;</a>
         <a class="current" href="index.html">Home</a>
         <a href="bikes.html">Bikes</a>
         <a href="news.html">News</a>
@@ -85,8 +86,8 @@
             <div class="news-letter">
                 <p>Sign up to get our latest products, top deals and inspiring stories stright to your inbox. Plus, get £5 off your first order over £50 - please allow 24hrs to receive your code.</p>
                 <div>
-                    <input type="text" placeholder="Please enter your email address">
-                    <button>Sign me up!</button>
+                    <input type="text" id="email-field" placeholder="Please enter your email address">
+                    <button id="signup-button">Sign me up!</button>
                 </div>
             </div>
             <div class="customer-services">
@@ -120,6 +121,6 @@
             </div>
         </section>
     </footer>
-    <script src="script/script.js"></script>
+    
 </body>
 </html>

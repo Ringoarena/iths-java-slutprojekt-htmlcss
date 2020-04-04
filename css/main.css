@@ -108,7 +108,7 @@ nav {
       nav ul li a.current {
         border-bottom: 0.2rem black solid; }
 
-#sidenav {
+#cellphone-menu {
   height: 100%;
   width: 0;
   position: fixed;
@@ -116,7 +116,7 @@ nav {
   top: 0;
   overflow-x: hidden;
   background-color: #e7e7e7; }
-  #sidenav a {
+  #cellphone-menu a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -124,9 +124,11 @@ nav {
     display: block;
     transition: 0.3s;
     border-bottom: 0.2rem #e7e7e7 solid; }
-  #sidenav a:hover {
+  #cellphone-menu a:visited {
+    color: black; }
+  #cellphone-menu a:hover {
     border-bottom: 0.2rem black solid; }
-  #sidenav a.current {
+  #cellphone-menu a.current {
     border-bottom: 0.2rem black solid; }
 
 main {

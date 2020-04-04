@@ -1,9 +1,22 @@
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    document.getElementById("sidenav").style.width = "100%";
-  }
-  
-  /* Set the width of the side navigation to 0 */
-  function closeNav() {
-    document.getElementById("sidenav").style.width = "0";
-  }
+window.onload = function() {
+
+    document.getElementById("submit").addEventListener("click", function(){
+        var searchBox = document.getElementById("search-box");
+        alert("You searched for: " + searchBox.value);
+        searchBox.value = "";
+    });
+
+    document.getElementById("signup-button").addEventListener("click", function(){
+        var emailField = document.getElementById("email-field");
+        alert("You registered: " + emailField.value);
+        emailField.value = "";
+    });
+
+    document.getElementById("menu-button").addEventListener("click", function(){
+        document.getElementById("cellphone-menu").style.width = "100%";
+    });
+      
+    document.getElementById("close-menu").addEventListener("click", function(){
+        document.getElementById("cellphone-menu").style.width = "0";
+    });
+}
