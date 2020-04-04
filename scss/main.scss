@@ -60,6 +60,13 @@ header {
             grid-area: logo;
         }
 
+        ion-icon#logo {
+            font-size: 32px;
+            margin: 0 auto;
+            grid-area: logo;
+            color: white;
+        }
+
         ul {
             grid-area: cart;
             margin: 0 0 0 auto;
@@ -328,6 +335,10 @@ footer {
             "logo search search cart cart cart";
 
             img {
+                margin: 0;
+            }
+
+            ion-icon#logo {
                 margin: 0;
             }
 

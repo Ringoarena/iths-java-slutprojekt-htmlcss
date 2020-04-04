@@ -40,6 +40,11 @@ header {
       width: 4rem;
       margin: 0 auto;
       grid-area: logo; }
+    header div ion-icon#logo {
+      font-size: 32px;
+      margin: 0 auto;
+      grid-area: logo;
+      color: white; }
     header div ul {
       grid-area: cart;
       margin: 0 0 0 auto;
@@ -213,6 +218,8 @@ footer {
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "logo search search cart cart cart"; }
     header div img {
+      margin: 0; }
+    header div ion-icon#logo {
       margin: 0; }
     header div form {
       margin: 0; }
