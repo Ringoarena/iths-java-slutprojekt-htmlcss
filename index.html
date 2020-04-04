@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Educational Index</title>
 </head>
-<body onload="alert('This is an educational project. contact: rikard.virta90@gmail.com')">
+<body>
     <header id="top">
         <div>
-            <button>Menu</button>
+            <button onclick="openNav()">Menu</button>
             <img src="https://www.wigglestatic.com/images/ui/wiggle-logo/desktop-wiggle_master_rgb_logo.svg" alt="wiggle logo">
             <ul>
                 <li><a href="#">Your Account</a></li>
@@ -33,6 +33,12 @@
             <li><a href="news.html">News</a></li>
         </ul>
     </nav>
+    <div id="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="current" href="index.html">Home</a>
+        <a href="bikes.html">Bikes</a>
+        <a href="news.html">News</a>
+    </div>
     <main>
         <section class="deals">
             <article>
@@ -114,5 +120,6 @@
             </div>
         </section>
     </footer>
+    <script src="script/script.js"></script>
 </body>
 </html>

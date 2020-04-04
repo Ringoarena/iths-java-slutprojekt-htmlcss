@@ -51,6 +51,7 @@ header {
         button {
             grid-area: menu;
             margin: 0 auto 0 0;
+            outline: none;
         }
         
         img {
@@ -153,6 +154,38 @@ nav {
                 border-bottom: 0.2rem black solid;
             }
         }
+    }
+}
+
+#sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    background-color: #e7e7e7;
+
+    a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: block;
+        transition: 0.3s;
+        border-bottom: 0.2rem #e7e7e7 solid;
+    }
+
+    a:visited {
+        // color: black;
+    }
+
+    a:hover {
+        border-bottom: 0.2rem black solid;
+    }
+
+    a.current {
+        border-bottom: 0.2rem black solid;
     }
 }
 
